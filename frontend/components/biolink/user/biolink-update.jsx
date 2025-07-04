@@ -203,6 +203,8 @@ export default function BioLinkUpdate({ id }) {
         const profileInfo = {
           name: biolink.name,
           bio: biolink.bio,
+          ar_name: biolink.ar_name,
+          ar_bio: biolink.ar_bio,
           profilePicture: biolink.profilePicture,
           socialMediaLinks: biolink.socialMediaLinks,
         };

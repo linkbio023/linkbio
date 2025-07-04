@@ -7,6 +7,7 @@ import { memo } from "react";
 import { Button } from "@/components/ui/button";
 
 const ProfileSection = memo(function ProfileSectionComponent({ profileInfo }) {
+  console.log(profileInfo, 'profileInfo');
   return (
     <div className="flex flex-col gap-2 items-center">
       {profileInfo?.profilePicture?.url && (
@@ -28,7 +29,7 @@ const ProfileSection = memo(function ProfileSectionComponent({ profileInfo }) {
       <div className="text-sm text-center ar-font">
         {profileInfo?.ar_bio || ""}
       </div>
-      <div className="text-sm text-cente ar-font">
+      <div className="text-sm text-center ar-font">
         {profileInfo?.bio || ""}
       </div>
       {/* Social Media Links Section */}

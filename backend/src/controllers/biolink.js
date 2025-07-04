@@ -128,6 +128,7 @@ async function publicView(req, res, next) {
   const { username } = req.params;
   try {
     const biolink = await services.biolink.publicView(username);
+    console.log(biolink, 'biolink');
     const responseDTO = new ResponseDTO()
       .setSuccess(true)
       .setData(biolink)

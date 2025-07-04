@@ -370,6 +370,7 @@ async function list(
       .setUser(biolink.user)
       .setUsername(biolink.username)
       .setName(biolink.name)
+      .setBio(biolink.bio)
       .setArName(biolink.ar_name)
       .setArBio(biolink.ar_bio)
       .build();
@@ -390,6 +391,7 @@ async function view(id, currentUser) {
     .populate("links")
     .populate("profilePicture")
     .lean();
+    console.log(biolink, 'biolink');
 
   if (!biolink) {
     const error = new Error("Biolink not found");

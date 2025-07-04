@@ -29,6 +29,10 @@ const biolinkSchema = new Schema(
       type: String,
       required: false,
     },
+    bio: {
+      type: String,
+      required: false,
+    },
     socialMediaLinks: [
       {
         icon: { type: String },

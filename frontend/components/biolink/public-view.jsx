@@ -10,7 +10,7 @@ export default async function PublicView({ username }) {
   const url = `${apiUrls.biolink.publicView}${username}`;
   const response = await fetch(url);
   const data = await response.json();
-
+  console.log(data, 'datadatadatadatadata');
   // If the response status is not 200 or the data is not successful, return a 404 page
   if (response.status !== 200 || !data.success) {
     return notFound();
