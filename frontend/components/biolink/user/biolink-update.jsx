@@ -132,37 +132,37 @@ export default function BioLinkUpdate({ id }) {
     },
     dotsOptions: {
       type: "square",
-      color: "#000",
+      color: "#0f6735",
       gradient: {
         type: "radial",
         rotation: 0,
         colorStops: [
-          { offset: 0, color: "#000" },
-          { offset: 1, color: "#000" },
+          { offset: 0, color: "#0f6735" },
+          { offset: 1, color: "#0f6735" },
         ],
       },
     },
     cornersSquareOptions: {
       type: "square",
-      color: "#000",
+      color: "#0f6735",
       gradient: {
         type: "radial",
         rotation: 0,
         colorStops: [
-          { offset: 0, color: "#000" },
-          { offset: 1, color: "#000" },
+          { offset: 0, color: "#0f6735" },
+          { offset: 1, color: "#0f6735" },
         ],
       },
     },
     cornersDotOptions: {
       type: "dot",
-      color: "#000",
+      color: "#0f6735",
       gradient: {
         type: "radial",
         rotation: 0,
         colorStops: [
-          { offset: 0, color: "#000" },
-          { offset: 1, color: "#000" },
+          { offset: 0, color: "#0f6735" },
+          { offset: 1, color: "#0f6735" },
         ],
       },
     },
@@ -173,8 +173,8 @@ export default function BioLinkUpdate({ id }) {
         type: "linear",
         rotation: 45,
         colorStops: [
-          { offset: 0, color: "#FAACA8" },
-          { offset: 1, color: "#DDD6F3" },
+          { offset: 0, color: "#ffffff" },
+          { offset: 1, color: "#ffffff" },
         ],
       },
     },

@@ -134,25 +134,27 @@ function AddNewBioLinkDialog() {
   function handleSubscriptionBasedAccess() {
     const usersBiolinkCount = biolinkCount?.count;
     const usersSubscriptionPlan = userSubscription?.plan;
-    // Restrict free user up to 2 biolinks
-    if (usersSubscriptionPlan == "free" && usersBiolinkCount >= 2) {
+    // Restrict free user up to 30 biolinks
+    if (usersSubscriptionPlan == "free" && usersBiolinkCount >= 30) {
       return {
         success: false,
-        message: "Free user's can create up to 2 biolinks",
+        message: "Free user's can create up to 30 biolinks",
       };
     }
-    // Resrict Pro user up to 5 biolinks
-    if (usersSubscriptionPlan == "pro" && usersBiolinkCount >= 5) {
+    
+    // Restrict Premium users up to 60 biolinks
+    if (usersSubscriptionPlan == "premium" && usersBiolinkCount >= 60) {
       return {
         success: false,
-        message: "Pro subscriber's can create up to 5 biolinks",
+        message: "Premium subscriber's can create up to 60 biolinks",
       };
     }
-    // Restrict Premium users up to 10 biolinks
-    if (usersSubscriptionPlan == "premium" && usersBiolinkCount >= 10) {
+
+    // Resrict Pro user up to 100 biolinks
+    if (usersSubscriptionPlan == "pro" && usersBiolinkCount >= 100) {
       return {
         success: false,
-        message: "Premium subscriber's can create up to 5 biolinks",
+        message: "Pro subscriber's can create up to 100 biolinks",
       };
     }
 
