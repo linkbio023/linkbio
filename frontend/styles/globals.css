@@ -150,12 +150,17 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: 'GraphikArabicRegular';
+  src: url('/fonts/GraphikArabic-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 .footer {
   position: relative;
   background-color: #2a6437;
   color: white;
   height: 200px;
-  overflow: hidden;
 }
 .footer-top-curve {
   position: absolute;
@@ -163,7 +168,7 @@
   left: 0;
   width: 100%;
   height: 100px;
-  background: #f7f7f7;
+  background: #fff;
   border-bottom-left-radius: 50% 100px;
   z-index: 1;
 }
@@ -176,6 +181,10 @@
 }
 .ar-font{
   font-family: 'GraphikArabic';
+  color: #2a6437;
+}
+.ar_bio{
+  font-family: 'GraphikArabicRegular';
   color: #2a6437;
 }
 .socialIcon svg{

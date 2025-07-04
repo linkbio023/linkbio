@@ -85,7 +85,7 @@ export default async function PublicView({ username }) {
 
         {/* Content */}
         <div className="relative h-full">
-          <div className="flex flex-col gap-4 w-full p-4 bg-transparent h-full max-w-6xl mx-auto">
+          <div className="flex flex-col gap-4 w-full p-4 bg-white h-full max-w-6xl mx-auto">
             {/* Profile Section */}
             <ProfileSection profileInfo={profileInfo} />
 

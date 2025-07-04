@@ -26,10 +26,10 @@ const ProfileSection = memo(function ProfileSectionComponent({ profileInfo }) {
       <h3 className="text-xl ar-font">
         {profileInfo?.name || ""}
       </h3>
-      <div className="text-sm text-center ar-font">
+      <div className="text-sm text-center ar_bio">
         {profileInfo?.ar_bio || ""}
       </div>
-      <div className="text-sm text-center ar-font">
+      <div className="text-sm text-center ar_bio">
         {profileInfo?.bio || ""}
       </div>
       {/* Social Media Links Section */}

@@ -38,27 +38,11 @@ export default function PublicViewFooter({ biolinkId }) {
     <footer className="footer">
       <div class="footer-top-curve"></div>
 
-      {/* ✅ Light green wavy stroke */}
-      <svg
-        className="absolute -top-4 left-0 w-full z-10 pointer-events-none"
-        viewBox="0 0 1440 80"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M0 50 C 240 0, 320 80, 480 40 C 640 0, 800 100, 960 40 C 1120 -10, 1280 80, 1440 30"
-          stroke="#2EF4A5"
-          strokeWidth="8"
-          fill="none"
-          strokeLinecap="round"
-        />
-      </svg>
-
       {/* ✅ Footer content */}
       <div className="flex justify-between items-center gap-6 footer-text">
         {/* Left - Website */}
         <div className="flex items-center gap-2 text-white text-sm font-semibold">
-          <span>🌐</span>
+    
           <span>WCA34.GOV.SA</span>
         </div>
 
