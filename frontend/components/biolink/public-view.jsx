@@ -50,7 +50,7 @@ export default async function PublicView({ username }) {
 
   return (
     <main>
-      <div className="relative w-full h-full min-h-screen overflow-hidden">
+      <div className="relative w-full h-[calc(100vh-200px)] overflow-hidden">
         {/* Background Image or Color */}
         <div className="absolute top-0 left-0 w-full h-full overflow-hidden">
           {/* Background Image */}

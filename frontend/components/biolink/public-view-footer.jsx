@@ -35,30 +35,38 @@ export default function PublicViewFooter({ biolinkId }) {
   }, [biolinkId]);
 
   return (
-    <div 
-    style={{
-      backgroundColor: '#18371E',
-      padding: '40px 15px',
-      backgroundImage: `url(/images/bg-footer.png)`,
-      backgroundSize: '100% 100%',
-      backgroundRepeat: 'no-repeat',
-    }}
-    className="fixed bottom-0 left-0 right-0 h-14 backdrop-blur-xs flex items-center justify-between px-4 z-50">
-      {/* <BiolinkShareButton /> */}
-      <div className="flex items-center">
-        <div className="flex flex-row items-center align-middle gap-2">
-          <div className="w-full h-full max-w-6">
-            <LogoLight />
-          </div>
-          <span className="text-sm font-semibold text-white">
-            {blinkConfig?.title}
-          </span>
+    <footer className="footer">
+      <div class="footer-top-curve"></div>
+
+      {/* ✅ Light green wavy stroke */}
+      <svg
+        className="absolute -top-4 left-0 w-full z-10 pointer-events-none"
+        viewBox="0 0 1440 80"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M0 50 C 240 0, 320 80, 480 40 C 640 0, 800 100, 960 40 C 1120 -10, 1280 80, 1440 30"
+          stroke="#2EF4A5"
+          strokeWidth="8"
+          fill="none"
+          strokeLinecap="round"
+        />
+      </svg>
+
+      {/* ✅ Footer content */}
+      <div className="flex justify-between items-center gap-6 footer-text">
+        {/* Left - Website */}
+        <div className="flex items-center gap-2 text-white text-sm font-semibold">
+          <span>🌐</span>
+          <span>WCA34.GOV.SA</span>
+        </div>
+
+        {/* Right - Logo Component + Text */}
+        <div className="flex items-center justify-end">
+          <Logo />
         </div>
       </div>
-      <div>
-      <Logo />
-      </div>
-      {/* <BiolinkPrivacyButton /> */}
-    </div>
+    </footer>
   );
 }

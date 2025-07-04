@@ -1,11 +1,16 @@
 import { SocialLogo } from "social-logos";
-import { FiPhone } from "react-icons/fi";
+import { FiPhone, FiMail } from "react-icons/fi";
 
 export const socialMediaOptions = [
   {
     value: "phone",
     label: "Phone",
     icon: <FiPhone size={20} />,
+  },
+  {
+    value: "email",
+    label: "Email",
+    icon: <FiMail size={20} />,
   },
   {
     value: "facebook",
